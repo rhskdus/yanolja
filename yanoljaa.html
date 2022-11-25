@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <title>yanolja</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 상단 메뉴 -->
+        <header class="header_top">
+            <!-- <div class="header_bg"></div> -->
+            <div class="logo">
+                <a class="logo_ya" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="173" height="51" viewBox="0 0 173 51" fill="none">
+                        <mask id="mask0_2_13" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="173" height="50" fill="#ffff">
+                        <path d="M0 0H172.522V49.8081H0V0Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0_2_13)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M134.439 36.7261C134.439 41.4585 131.555 43.0224 128.908 43.0224V49.8058C132.875 49.8058 141.28 48.6904 141.323 36.8467V11.5295H134.439V36.7261ZM121.894 37.0789H128.855V0H121.894V37.0812V37.0789ZM165.588 24.4863C165.588 20.8533 162.606 17.9078 158.932 17.9078C155.258 17.9078 152.279 20.8533 152.279 24.4863C152.279 28.1171 155.258 31.0626 158.932 31.0626C162.609 31.0626 165.588 28.1171 165.588 24.4841V24.4863ZM172.517 25.2466V37.0857H166.349V34.4498C164.339 36.4575 161.737 37.6753 158.932 37.6753C151.543 37.6753 145.554 31.7569 145.554 24.4522C145.554 17.1498 151.543 11.2313 158.932 11.2313C166.308 11.2313 172.517 16.9972 172.517 25.2466ZM49.4826 24.4863C49.4826 20.8533 46.5006 17.9078 42.8266 17.9078C39.1526 17.9078 36.1729 20.8533 36.1729 24.4863C36.1729 28.1171 39.1526 31.0626 42.8266 31.0626C46.5028 31.0626 49.4826 28.1171 49.4826 24.4841V24.4863ZM56.4117 25.2466V37.0857H50.2428V34.4498C48.2329 36.4575 45.631 37.6753 42.8266 37.6753C35.4377 37.6753 29.4487 31.7569 29.4487 24.4522C29.4487 17.1498 35.4377 11.2313 42.8266 11.2313C50.2041 11.2313 56.4117 16.9972 56.4117 25.2466ZM110.802 24.4863C110.802 20.8533 107.822 17.9078 104.148 17.9078C100.472 17.9078 97.4923 20.8533 97.4923 24.4863C97.4923 28.1171 100.474 31.0626 104.148 31.0626C107.822 31.0626 110.802 28.1171 110.802 24.4841V24.4863ZM117.526 24.4863C117.526 31.7888 111.537 37.7072 104.148 37.7072C96.7593 37.7072 90.7681 31.7888 90.7681 24.4863C90.7681 17.1816 96.7593 11.2632 104.148 11.2632C111.537 11.2632 117.526 17.1816 117.526 24.4863ZM21.6933 11.5364L14.9258 27.5616L7.98304 11.5364H0L11.2746 35.506L4.83717 49.7398H12.5379L29.6968 11.5364H21.6933ZM86.4841 22.0871V37.0857H79.646V22.6471C79.646 19.6469 77.6793 17.3819 74.1441 17.3819C70.9277 17.3819 68.6309 19.6469 68.6309 22.7085L68.6241 37.0857H61.8088V11.5295H68.3578V14.5343C70.0013 12.0121 73.3816 11.2336 75.7672 11.2336C83.6159 11.2336 86.4841 16.3439 86.4841 22.0871Z" fill="white"/>
+                        </g>
+                        </svg>
+                </a>
+            </div>
+            
+            <!-- <div class="m-menu-box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+            <input type="checkbox" id="icon">
+            <label for="icon">  
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div id="header">
+                <ul>
+                    <li><a href="#">국내숙소</a></li>
+                    <li><a href="#">교통/항공</a></li>
+                    <li><a href="#">예약확인</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </div>
+
+            <ul class="top_menu">
+                <li class="menu">
+                    <a href="#none">국내숙소</a>
+                    <ul class="sub_menu1">
+                    <li><a href="#none">호텔</a></li>
+                    <li><a href="#none">모텔</a></li>
+                    <li><a href="#none">펜션</a></li>
+                    <li><a href="#none">게스트하우스</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#none">교통/항공</a>
+                    <ul class="sub_menu2">
+                        <li><a href="#none">기차</a></li>
+                        <li><a href="#none">고속버스</a></li>
+                        <li><a href="#none">비행기</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#none">예약확인</a>
+                </li>
+                <li class="menu">
+                    <a href="#none">이벤트</a>
+                </li>
+            </ul>
+            <div class="icon-box">
+                <!-- <a href="#none"><img src="img/로그인 아이콘.png" alt=""></a> -->
+                <a href="" class="user_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#ffff" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a>
+                <a href="#none" class="login_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#ffff" d="M352 96h64c17.7 0 32 14.3 32 32V384c0 17.7-14.3 32-32 32H352c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c53 0 96-43 96-96V128c0-53-43-96-96-96H352c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-7.5 177.4c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22v72H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H160v72c0 9.6 5.7 18.2 14.5 22s19 2 26-4.6l144-136z"/></svg></a>
+            </div>
+
+            <!-- <div class="m-menu-box">
+                <span></span>gogo.gogo
+                <span></span>
+                <span></span>
+            </div> -->
+        </header>
+        <!-- 섹션1 -->
+        <section class="sec_1">
+            <div class="top_bg">
+                <img src="img/상단배경.png" alt="">
+            </div>
+            <!-- 검색박스 -->
+            <div class="search_box">
+                <div class="search_in">
+                    <div class="btn_box">
+                        <button class="click">숙소</button>
+                        <button>교통/항공</button>
+                        <button>음식점</button>
+                        <button>놀거리</button>
+                    </div>
+                    <div class="search-in-box">
+                        <div class="in_box">
+                            <div class="filter">
+                            <a href=""><p>#상세 필터를 선택해주세요</p>
+                                <a href="#none" class="plus_svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#FF3478" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></a>
+                                </a>
+                            </div>
+                            <div class="date-box">
+                                <div class="where_box">
+                                    <div class="where_in">
+                                        <img class="where_img" src="img/위치 이모티콘.png" alt="">
+                                        <input class="in_put" type="text" placeholder="어디로 가시나요?" value="부산">
+                                    </div>
+                                </div>
+                                <div class="checkin_box">
+                                    <div class="checkin_in">
+                                        <img class="checkin_img" src="img/달력 이모티콘.png" alt="">
+                                        <spans class="date">2022-11-08</spans>
+                                    </div>
+                                </div>
+                                <div class="guest">
+                                    <div class="guest_in">
+                                        <img class="guest_img" src="img/사람 이모티콘.png" alt="">
+                                        <spans class="guest_sp">성인 2명</spans>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gogo">
+                            <a href="#none">
+                                <h3>예약</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 상단 이벤트 -->
+            <div class="swiper-container">
+                <div class="first_event swiper firstSwiper" data-aos="zoom-in" data-aos-dutration="1500" data-aos-offset="100">
+                    <div class="top_event swiper-wrapper">
+                        <a href="#none" class="swiper-slide">
+                            <img class="spa_img" src="img/스파펜션.png" alt="">
+                        </a>
+                        <a href="#none" class="swiper-slide">
+                            <img class="check_img" src="img/교통예약.png" alt="">
+                        </a>
+                        <a href="#none" class="swiper-slide">
+                            <img class="hi_img" src="img/하이원리조트.png" alt="">
+                        </a>
+                        <a href="#none" class="swiper-slide">
+                            <img class="yogiyo_img" src="img/요기요상품특가.png" alt="">
+                        </a>
+                        <a href="#none" class="swiper-slide">
+                            <img class="roon_img" src="img/해외숙소.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 섹션2 -->
+        <section class="sec_2">
+            <div class="sec_2_top"  data-aos="fade-up" data-aos-dutration="1500" data-aos-offset="100">
+                <!-- <img src="img/인기여행지 배경.png" alt=""> -->
+                <h1 class="sec_2_title">인기여행지</h1>
+            </div>
+            <div class="hotplace">
+                <div class="hot_1">
+                    <div class="place place_1" data-aos="fade-up" data-aos-dutration="1500" data-aos-offset="300">
+                        <img src="img/제주도 배경.png" alt=""  >
+                        <h2>#제주도</h2>
+                    </div>
+                    <div class="place place_2" data-aos="fade-up" data-aos-dutration="2000" data-aos-offset="300">
+                        <img src="img/강원도 배경.png" alt=""  >
+                        <h2>#강원도</h2>
+                    </div>
+                </div>
+                <div class="hot_2">
+                    <div class="place place_3" data-aos="fade-up" data-aos-dutration="1500" data-aos-offset="300">
+                        <h2>#부산</h2>
+                        <img src="img/부산배경.png" alt=""  >
+                    </div>
+                    <div class="place place_4" data-aos="fade-up" data-aos-dutration="2000" data-aos-offset="300">
+                        <h2>#경상북도</h2>
+                        <img src="img/호미곶.png" alt=""  >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 섹션3 -->
+        <section class="sec_3">
+            <h1>부산 오션 view! 인기숙소</h1>
+            <div class="view_img swiper secondSwiper" data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="hot_view swiper-wrapper">
+                    <a href="#none" class="swiper-slide"><img src="img/강릉 상상펜션.png" alt=""></a>
+                    <a href="#none" class="swiper-slide"><img src="img/강릉 화이트비치 펜션.png" alt=""></a>
+                    <a href="#none" class="swiper-slide"><img src="img/경주 풀빌라 웨이트리.png" alt=""></a>
+                    <a href="#none" class="swiper-slide"><img src="img/여수 밤바다 펜션.png" alt=""></a>
+                    <a href="#none" class="swiper-slide"><img src="img/오션 솔레뷰 호텔.png" alt=""></a>
+                    <a href="#none" class="swiper-slide"><img src="img/텔부산 송도호.png" alt=""></a>
+            </div>
+            </div>
+            <div class="pink_bar">
+            </div>
+        </section>
+        <!-- 섹션4 -->
+        <section class="sec_4">
+            <div class="coupon swiper thirdSwiper" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
+                <div class="cp_img swiper-wrapper" >
+                    <a href="#none" class="cp_event swiper-slide"><img src="img/펜션 쿠폰.png" alt=""></a>
+                    <a href="#none" class="cp_event swiper-slide"><img src="img/제주여행 쿠폰.png" alt=""></a>
+                    <a href="#none" class="cp_event swiper-slide"><img src="img/제주패스 렌터카 쿠폰.png" alt=""></a>
+                    <a href="#none" class="cp_event swiper-slide"><img src="img/나인트리 쿠폰.png" alt=""></a>
+                    <a href="#none" class="cp_event swiper-slide"><img src="img/신라스테이 쿠폰.png" alt=""></a>
+                    <a href="#none" class="cp_event swiper-slide"><img src="img/제주패스 렌터카 쿠폰.png" alt=""></a>
+                    <a href="#none" class="cp_event swiper-slide"><img src="img/신화월드 쿠폰.png" alt=""></a>
+                </div>
+            </div>
+            <div class="icon_coupon">
+                <img class="left_i bottom_icon swiper-button-prev" src="img/왼쪽 아이콘.png" alt="">
+                <img class="right_i bottom_icon swiper-button-next" src="img/오른쪽 아이콘.png" alt="">
+            </div>
+        </section>
+        <section class="sec_5">
+            <!-- 하단 다운로드 배너 창 -->
+            <div class="download">
+                <div class="left">
+                    <div class="left_sms">
+                        <h2>초특가 야놀자</h2>
+                        <p class="p_1">야놀자를 모바일 앱으로 더 편하게 이용해보세요!</p>
+                        <p class="p_2">앱 다운로드 링크가 포함된 문자 (SMS) 수신을 위해 휴대폰 번호를 입력하세요.</p>
+                    </div>
+                    <div class="sms">
+                        <input type="text" placeholder="-없이 숫자만 입력">
+                        <button class="send">전송</button>
+                    </div>
+                </div>
+                    <div class="right_qr">
+                        <span><img src="img/큐알.png" alt=""></span>
+                    </div>
+            </div>
+        </section>
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer_box">
+                <div class="intro">
+                    <ul>
+                        <li><a href="#none">회사소개</a></li>
+                        <li><a href="#none">광고제휴문의</a></li>
+                        <li><a href="#none">인재채용</a></li>
+                        <li class="bold"><a href="#none">개인정보처리방침</a></li>
+                        <li><a href="#none">청소년 보호 정책</a></li>
+                        <li><a href="#none">서비스 이용약관</a></li>
+                        <li><a href="#none">위치정보이용약관</a></li>
+                        <li><a href="#none">전자금융거래이용약관</a></li>
+                        <li><a href="#none">전재금융거래 이용자 유의사항</a></li>
+                        <li><a href="#none">사업자정보확인</a></li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <p>(주)야놀자 |대표이사 : 이수진, 김종윤, 배보찬 | 사업자 등록번호 : 220-87-42885 | <br>
+                        통신판매업신고 : 강남-14211호 | 메일 : help@yanolja.com<br>
+                        관광사업자 등록번호 : 제2016-31호 | 주소 : 서울 강남구 테헤란로 108길 42 |<br>
+                        호스팅서비스 제공자 : 주식회사 야놀자<br>
+                        고객센터 : 1644-1346 (오전 9시 - 익일 새벽 3시)</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
